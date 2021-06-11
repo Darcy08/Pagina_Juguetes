@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+          box-sizing: border-box;
+          font-family: 'Amatic SC', cursive;
+        }
+        [class*='col-']{
+          float:left;
+          padding: 15px;
+          
+        }
+        .row::after{
+          content: '';
+          display: table;
+          clear: both;
+        }
+        body{
+            background-image: url("https://64.media.tumblr.com/72c2c117095fb1ef546685b2de60400b/tumblr_nks36ybPXG1sb27x7o1_1280.jpg");
+            background-size: cover;
+        }
+        .header{
+            height: 10vh;
+            background-color:#FD9D5F;
+            margin-top: -10px;
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        .logo, nav{
+            display: inline-block;
+        }
+        .logo{
+            width: 20%;
+        }
+        nav{
+            width: 70%;
+            text-align: right;
+                
+        }
+        .logo img{
+            height: 15%;
+            margin-top: -15px;
+            vertical-align: middle;
+        }
+        nav a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 15px;
+            color:white;
+            font-size: 2.0em;
+            margin:0 10px;
+            text-align: center;
+        }
+        a:hover{
+            background-color:#a84e12;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Mountains of Christmas', cursive;
+            font-size: 4.0em;
+            margin-top: 0px;
+                
+        }
+        .container{
+            border: 5px solid black;
+            margin: 0px 200px;
+        }
+        .row{
+            text-align: center;
+        }
+        label{
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        input[type=text], input[type=email], select, textarea{
+            background-color: #C8F04C;
+            color:black;
+            font-size: 1.5em;
+            padding:3px 15px;
+            border: 1px solid black;
+            outline: none;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 35%;    
+        }
+        textarea{
+            resize: none;
+        }
+        input[type=radio]{
+            font-size: 1.5em;
+        }
+        input[type=submit]{
+            padding: 10px 10px;
+            background-color: #F18C52;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            width: 35%;
+            text-align: center;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        input[type=submit]:hover{
+            background-color: #A84E12;
+            box-shadow: 0 0 20px rgb(37, 36, 36);
+        }
+        .flamenco{
+            display: block;
+            position: absolute;
+            margin-left: 0px;
+            margin-top: -70px;
+            z-index:1
+                    
+        }
+        .flamenco img{
+            position:absolute;
+            filter: drop-shadow(5px 5px 10px rgb(24, 23, 23));
+            z-index:-1;
+            }
+        .hipopotamo{
+            display: block;
+            position: absolute;
+            margin-left: 84%;
+            margin-top: -70px;
+            z-index:1
+                    
+        }
+        .hipopotamo img{
+            position:absolute;
+            filter: drop-shadow(5px 5px 10px rgb(24, 23, 23));
+            z-index:-1;
+        }
+        .elefante{
+            display: block;
+            position: absolute;
+            margin-left: 70px;
+            margin-top: 500px;
+            z-index:1
+                    
+        }
+        .elefante img{
+            position:absolute;
+            filter: drop-shadow(5px 5px 10px rgb(24, 23, 23));
+            z-index:-1;
+        }
+        .leon{
+            display: block;
+            position: absolute;
+            margin-left: 80%;
+            margin-top: 500px;
+            z-index:1
+                    
+        }
+        .leon img{
+            position:absolute;
+            filter: drop-shadow(5px 5px 10px rgb(24, 23, 23));
+            z-index:-1;
+        }
+        
+        /*tablet*/
+        @media only screen and (max-width:1024px){
+           img{
+               display: none;
+           }
+           nav{
+               display: inline;
+           }
+           .logo{
+               display: none;
+           }
+           .header{
+                height: auto;
+                width: 100%;
+                margin-left: 1px;
+                text-align: center;
+                padding: 30px 15px;
+            }
+            
+            nav a{
+                display: inline;
+                padding: 30px 15px;
+                font-size: 40px;
+               
+            }
+            h1{
+                text-align: center;
+                font-size: 60px;
+                margin-top: 0px; 
+                width:100%; 
+            }
+            .container{
+                border: 5px solid black;
+                margin: 0px 200px;
+                width:100%;
+                margin-left: 1px;
+            }
+            input[type=text], input[type=email], select, textarea{
+                width: 50%;
+                height: 50px;    
+                font-size: 30px;
+            }
+            textarea{
+                resize: none;
+                width: 50%;
+                height: 200px;  
+            }
+            input[type=radio]{
+                font-size: 40px;
+            }
+            input[type=submit]{
+                width: 50%;
+                font-size: 45px;
+            }
+            label{
+                font-size: 50px;
+                margin-bottom: 15px;
+            }
+            .flamenco{
+                display: none;
+            }
+            .hipopotamo{
+                display: none;           
+            }
+            .elefante{
+                display: none;         
+            }
+            .leon{
+                display: none;
+            }
+
+        }
+ 
+
+        /*celulares*/
+        @media only screen and (max-width:540px){
+            img{
+               display: none;
+            }
+           .logo{
+               display: none;
+           }
+           .header{
+                height: auto;
+                width: 100%;
+                text-align: center;
+                padding: 5px 0px;
+            }
+            
+            nav a{
+                display: block;
+                padding: 5px 0px;
+                font-size: 35px; 
+               
+            }
+            h1{
+                text-align: center;
+                font-size: 60px;
+                margin-top: 0px; 
+                width:100%; 
+            }
+            .container{
+                border: 5px solid black;
+                margin: 0px 200px;
+                width:100%;
+                margin-left: 1px;
+            }
+            input[type=text], input[type=email], select, textarea{
+                width: 90%;
+                height: 50px;  
+                font-size: 25px;
+
+            }
+            textarea{
+                resize: none;
+                width: 90%;
+                height: 200px;  
+                margin-bottom: 20px;
+            }
+            input[type=radio]{
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+            input[type=submit]{
+                width: 90%;
+                font-size: 40px;
+            }
+            label{
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            .flamenco{
+                display: none;
+            }
+            .hipopotamo{
+                display: none;           
+            }
+            .elefante{
+                display: none;         
+            }
+            .leon{
+                display: none;
+            }
+
+             
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo1.png" width="60%" > 
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="area_niños.html">Area de niños</a>
+            <a href="area_niñas.html">Area de niñas</a>
+        </nav>
+    </div>
+    <h1>Contáctanos</h1>
+    <div class="flamenco">
+        <img src="img/flamenco2.png"  width="auto" height="250px">
+    </div>
+    <div class="hipopotamo">
+        <img src="img/hipopotamo.png"  width="auto" height="250px">
+    </div>
+    <div class="elefante">
+        <img src="img/elefante.png"  width="auto" height="250px">
+    </div>
+    <div class="leon">
+        <img src="img/leon.png"  width="auto" height="250px">
+    </div>
+    <div class="container">
+        <div class="row"> 
+            <div >
+                <div>
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="mail">Email: </label><br>
+                    <input type="email" id="mail" name="mail" placeholder="correo@dominio.com">
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label><br>
+                    <input type="radio" name="sexo" id=”femenino” value="f">
+                    <label for="hombre">Femenino</label>
+                    <input type="radio" name="sexo" id="masculino" value="m">
+                    <label for="mujer">Masculino</label>
+                   
+                </div>
+                <div>
+                    <label for="pais">Pais:</label><br>
+                    <select name="pais">
+                        <option value="hn">Honduras</option>
+                        <option value="gt">Guatemala</option>
+                        <option value="els" >El Salvador</option>
+                        <option value="nc" >Nicaragua</option>
+                        <option value="cr" >Costa Rica</option>
+                        <option value="es" >Panamá</option>
+                    </select>
+                   
+                </div>
+                
+                <div>
+                    <label for="message">Mensaje:</label><br>
+                    <textarea id="message" name="message" rows=5></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

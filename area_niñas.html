@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+	body{
+		background-color: #d9b1d9;
+		background-image: url("https://www.pinterest.es/pin/773634042242033877/");
+	}
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+	p{
+		font-family: Arial,Helvetica, sans-serif;
+		font-size: 20px;
+		color: Solid Red;
+	}
+	nav{
+        position:sticky;
+        z-index: 2;
+        top:0;
+        background-color: rgb(218, 22, 143);
+        width: 100%;
+        text-align: left;
+        height: 70px;
+    }
+    .nav a{
+            position: relative;
+            float: left;
+            top: 2px;
+            color: white;
+            text-align: center;
+            padding: 5px 20px;
+            text-decoration: none;
+            font-size: 2.0em;
+            font-weight: bold;
+            height: 60px;
+        }
+        .nav a:hover{
+            background-color:#b209d4;
+            color:#333;
+            top: 0;  
+            height: 63px;
+        }
+    .op{       
+        width: 250px;
+        height: auto;
+        position: absolute;
+        left: 40px;
+        border-radius: 10px;
+        filter: drop-shadow(10px 20px 20px rgba(156, 168, 46, 0.651));
+    }
+    .title h1{
+        z-index: 2;
+        color:white;
+        font-family: Autumn in November, cursive;
+        font-size: 8vh;
+        text-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+        filter: drop-shadow(10px 20px 20px rgba(250, 246, 246, 0.651));
+    } 
+    select{
+        width: 30%;
+        margin-right:20px;
+        margin-left: 400px;
+        padding: 10px;
+        color: cornsilk;
+        background-color: rgb(250, 0, 229);
+        filter: drop-shadow(10px 20px 20px rgba(0, 0, 0, 0.651));
+        border: rgb(0, 0, 0) 6px double;
+        filter: drop-shadow(10px 20px 20px rgba(59, 58, 58, 0.651));
+    }
+    video{
+        width: 50%;
+        position: relative;
+        left: 28%;
+        top: 80px;
+    }
+    .tinkerbell{
+        position: absolute;
+        display: flex;
+        width: 28%;
+        top: 25%;
+        left: 2%;
+        filter: drop-shadow(10px 20px 20px rgba(52, 189, 33, 0.651));
+    }
+    .cenicienta{
+        position: absolute;
+        display: flex;
+        width: 28%;
+        top: 20%;
+        right: 0%;
+        filter: drop-shadow(10px 20px 20px rgba(24, 98, 182, 0.651));
+    }
+    .blanca , .aurora, .sirenita, .jazmin, .bella{
+        float: left;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 0px;
+        top: -50px;
+    }
+   
+    .juguetes{
+        background-color: rgb(119, 0, 119);
+        width: 100%;
+        color: white;
+        font-size: 5rem;
+        position: relative;
+        top: 150px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 2;
+        border: rgb(0, 0, 0) 6px double;
+    }
+    .jueguete1{
+        padding: 20px 15px;
+        height: auto;
+        margin: 10px;
+        background-color: rgb(255, 51, 136);
+    }
+    .row{
+        border: 1px solid rgb(148, 0, 69);
+        position: relative;
+        top: 200px;
+        margin: 15px;
+        padding: 20px;
+        background-color: rgba(230, 82, 144, 0.781);
+        display: flex;
+    }
+    .row2{
+        border: 1px solid rgb(148, 0, 69);
+        position: relative;
+        top: 240px;
+        margin: 15px;
+        padding: 20px;
+        background-color: rgba(238, 113, 165, 0.781);
+        display: flex;
+    }
+    .row3{
+        border: 1px solid rgb(148, 0, 69);
+        position: relative;
+        top: 280px;
+        margin: 15px;
+        padding: 20px;
+        background-color: rgba(238, 113, 165, 0.781);
+        display: flex;
+    }
+    .juguete1 img{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 35%;
+        display: inline-block;
+        text-align: center;
+    }
+    .envios{
+        background-color: violet;
+        margin: 0% 20%;
+    }
+    .row4{
+        border: 1px solid rgb(148, 0, 69);
+        position: relative;
+        top: 320px;
+        margin: 15px;
+        padding: 20px;
+        background-color: rgba(238, 113, 165, 0.781);
+        display: flex;
+    }
+    .row5{
+        border: 1px solid rgb(148, 0, 69);
+        position: relative;
+        top: 360px;
+        margin: 15px;
+        padding: 20px;
+        background-color: rgba(238, 113, 165, 0.781);
+        display: flex;
+    }
+    @media all and (max-width: 768px){
+        	 		body{
+        	 		 background-color: rgb(255, 200, 200); 
+        	 		} 
+                     select{
+                    width: 70%;
+       
+    }
+                   
+        }
+        @media all and (max-width: 432px) { 
+        	.flex-container { flex-direction: column ;
+        	 } 
+        			body{
+        	 			background-color: rgb(128, 0, 128);
+        	 		} 
+
+                     video{
+                        width: 100%;
+                       
+                    }
+        }
+
+         @media screen and (min-device-width : 768px) and (max-device-width : 1024px) and  (orientation : landscape)
+         	{
+         		.flex-container { flex-direction: row; 
+        	    } 
+
+                .entry, .entry-content { 
+          	
+          			font-size:1.2em; line-height:1.5em; }
+          			body{
+        	 		    background-color: rgb(20, 79, 189); 
+        	 		}
+             }
+
+</style>
+</head>
+<body>
+    <div class="nav col-g-12 col-12"  >
+            <img class="op" src="img/logo3.png" alt="logo" >
+            <a href="contacto.html"style="float:right;"> CONTACTO</a>
+            <a href="#"style="float:right;">||</a>
+            <a href="area_niños.html"style="float:right;">ÁREA DE NIÑOS</a>
+            <a href="#"style="float:right;">||</a>
+            <a href="index.html"style="float:right;">INICIO</a> 
+    </div >
+        <div class="title">
+            <marquee direction="left" width="100%" heigth="150px"  src="img/cenicienta.png" alt="cenicienta"><h1>AREA DE NIÑAS</h1></marquee>
+        </div> 
+        <div class="col-75"><i class="fas fa-file-signature"></i>   
+            <select id="Buscar" name="Buscar">
+                <option value="mss">MUÑECA SQUAD SURTIDO</option>
+                <option value="mss">BABY ALIVE MUÑECA LITTLES PONY RIDE</option>
+                <option value="mss">BARBIE RESCATE DE ANIMALITOS</option>
+                <option value="mss">BARBIE MUÑECA GIMNASTA CON ACCESORIOS</option>
+                <option value="mss">POLLY POCKET CLINICA VETERINARIA</option>
+                <option value="mss">BABRIE FUTBOL CON ACCESORIOS</option>
+                <option value="mss">DISNEY RAYA PRINCESA</option>
+                <option value="mss">BABY ALIVE MUÑECA LITTLES PONY RIDE</option>
+                <option value="mss">BARBIE MUÑECA GIMNASTA CON ACCESORIOS</option>
+                <option value="mss">BARBIE MUÑECA GIMNASTA CON ACCESORIOS</option>
+                <option value="mss">POOPAROOS FIGURA PACK FAMILIA</option>
+                <option value="mss">PRINCESA MULAN FASHION</option>
+                <option value="mss">DISNEY RAYA PRINCESA</option>
+            </select>
+        </div>  
+        <video class="video" src="img/videous_Trim.mp4" autoplay muted loop></video> 
+        <img src="img/tinker.png" class="tinkerbell">
+        <img src="img/cenicienta.png" class="cenicienta">
+        
+        <h1 class="juguetes">JUGUETES</h1>
+        <div class="row">
+            <img src="img/blanca.png" class="blanca">
+            <div class="juguete1 col-4"><img src="img/barbie.png"><p>US$19.99</p><p class="envios">Con envíos a el salvador</p><p>Más opciones de compra US$14.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Edades: 36 meses-7 años</p></div>
+            <div class="juguete1 col-4"><img src="img/castillo.png"><p>US$100.00</p><p class="envios">Con envíos a Honduras</p>  <p>Más opciones de compra US$45.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Edades: 10 años- 13 años</p></div>
+            <div class="juguete1 col-4"><img src="img/casa.png"><p>US$25.20</p><p class="envios">Con envíos a Honduras</p>   <p>Más opciones de compra US$70.12</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Edades: 4 años - 8 años</p></div>
+        </div> 
+        <div class="row2">
+            <img src="img/aurora.png" class="aurora">
+            <div class="juguete1 col-4"><img src="img/polly.png"><p>US$23.9</p><p class="envios">Con envíos a Honduras</p> <p>Más opciones de compra US$14.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 46 meses-7 años</p></div>
+            <div class="juguete1 col-4"><img src="img/pistola.png"><p>US$37.9</p><p class="envios">Con envíos a Guatemala</p> <p>Más opciones de compra US$14.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 36 meses-7 años</p></div>
+            <div class="juguete1 col-4"><img src="img/gimnasta.png"><p>US$56.3</p><p class="envios">Con envíos a Nicaragua</p> <p>Más opciones de compra US$14.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 36 meses-9 años</p></div>
+        </div>  
+        <div class="row3">
+            <img src="img/sirenita.png" class="sirenita">
+            <div class="juguete1 col-4"><img src="img/feliiz.png"><p>US$45.50</p><p class="envios">Con envíos a Costa rica</p> <p>Más opciones de compra US$18.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 5 años-12años</p></div>
+            <div class="juguete1 col-4"><img src="img/beby.png"><p>US$18.8</p><p class="envios">Con envíos a Honduras</p> <p>Más opciones de compra US$23.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 34 meses- 7años</p></div>
+            <div class="juguete1 col-4"><img src="img/troli.png"><p>US$19.90</p><p class="envios">Con envíos a Panama</p> <p>Solo queda(n) 15 en stock</p><p>(19 ofertas más de articulos nuevos y usados))</p><p>Edades: 4años - 10 años</p></div>
+        </div> 
+        <div class="row4">
+            <img src="img/jazmin.png" class="jazmin">
+            <div class="juguete1 col-4"><img src="img/juquete.png"><p>US$56.50</p><p class="envios">Con envíos a Honduras</p> <p>Más opciones de compra US$18.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 5 años-12años</p></div>
+            <div class="juguete1 col-4"><img src="img/images.png"><p>US$12.4</p><p class="envios">Con envíos a mexico</p> <p>Más opciones de compra US$23.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 36 meses-8 años</p></div>
+            <div class="juguete1 col-4"><img src="img/happy.png"><p>US$107.9</p><p class="envios">Con envíos a Guatemala</p> <p>Solo queda(n) 15 en stock</p><p>(19 ofertas más de articulos nuevos y usados))</p><p>Edades: 4 - 8 años</p></div>
+        </div> 
+        <div class="row5">
+            <img src="img/bella.png" class="bella">
+            <div class="juguete1 col-4"><img src="img/chelsea.png"><p>US$90.5</p><p class="envios">Con envíos a Honduras</p> <p>Más opciones de compra US$18.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 3 años-13años</p></div>
+            <div class="juguete1 col-4"><img src="img/kindi.png"><p>US$34.6</p><p class="envios">Con envíos a Honduras</p> <p>Más opciones de compra US$23.75</p><p>(19 ofertas más de articulos nuevos y usados)</p><p>Eddades: 36 meses- 4 años</p></div>
+            <div class="juguete1 col-4"><img src="img/tienda.png"><p>US$67.00</p><p class="envios">Con envíos a Honduras</p> <p>Solo queda(n) 15 en stock</p><p>(19 ofertas más de articulos nuevos y usados))</p><p>Edades: 4 años - 8 años</p></div>
+        </div> 
+</body>
+</html>

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Chewy&family=Mali:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap" rel="stylesheet">
+    <title>Area de niños</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background-image:url("https://storybookstorage.s3.amazonaws.com/items/images/000/412/583/original/20160522-6-learr0.png?1463922049");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Amatic SC', cursive;
+        }
+        .nav{
+            background-color: #1f2730e1;
+            top: 0;
+        }
+    
+        /*pc*/
+        .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;} 
+        .nav a{
+            position: relative;
+            float: left;
+            width: 100;
+            top: 5px;
+            color: white;
+            text-align: center;
+            padding: 5px 20px;
+            text-decoration: none;
+            font-size: 2.0em;
+            font-weight: bold;
+            height: 60px;
+        }
+        .nav a:hover{
+            background-color:#0770BB;
+            color:#333;
+            top: 0;  
+            height: 63px;
+        }
+        .imagen{
+            width: 140px;
+            padding: 0px 0px 0px 35px;
+            display: inline-block;
+        }
+        h1{
+            display: inline-block;
+            position: relative;
+            bottom: 10px;
+            left: 15px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;     
+        }
+        .img1{
+            width: 430px;
+            position: relative;
+            left: 480px;
+            top: 20px;
+        }
+        input[type=search]{
+            border: 3px solid #49627A;
+            position: relative;
+            width: 400px;
+            left: 50px;
+            border-radius: 7px ;
+            font-family: 'Amatic SC', cursive;
+            font-size: 1.8em;
+            text-align: center;
+            top: 50px;
+            background-image: url("img/lupa.png");
+            background-repeat: no-repeat;
+            background-position: 40px 5px;
+            background-size: 25px 25px;
+            
+        }
+        input[type=search]:focus{
+            outline: brown;
+            border-color: brown;
+            border-radius: 7px; 
+        }
+        
+        .img2{
+            width: 320px;
+            position: relative;
+            left: 880px;
+            bottom: 130px;
+        }
+        .img3{
+            width: 280px;
+            position: relative;
+            left: -260px;
+            top: 80px;
+
+        }
+        .video{
+            width: 650px;
+            height: auto;
+            position: relative;
+            left: -250px;
+            top: 120px;
+            border-radius: 7px;
+        }
+        p{
+            color: #333;
+        }
+        .parrafo1{
+            background-color: #C0DBFF;
+            font-size: 1.7em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: 130px;
+            width: 400px;
+            left: 215px;
+            text-align: center;
+        }
+        .parrafo2{
+            background-color: #C0DBFF;
+            font-size: 1.7em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: 30px;
+            width: 350px;
+            left: 795px;
+            text-align: center;
+            
+        }
+        .parrafo3{
+            background-color: #C0DBFF;
+            font-size: 1.7em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: 5px;
+            width: 400px;
+            left: 185px;
+            text-align: center;
+            
+        }
+        .parrafo4{
+            background-color: #C0DBFF;
+            font-size: 1.7em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -100px;
+            width: 350px;
+            left: 795px;
+            text-align: center;
+            
+        }
+        .parrafo5{
+            background-color: #C0DBFF;
+            font-size: 1.7em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -50px;
+            width: 400px;
+            left: 185px;
+            text-align: center;
+            
+        }
+        .parrafo6{
+            background-color: #C0DBFF;
+            font-size: 1.7em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -155px;
+            width: 350px;
+            left: 795px;
+            text-align: center;
+            
+        }
+        .parrafo7{
+            background-color: #C0DBFF;
+            font-size: 1.7em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -100px;
+            width: 400px;
+            left: 185px;
+            text-align: center;   
+        }
+        .parrafo8{
+            background-color: #C0DBFF;
+            font-size: 1.7em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -205px;
+            width: 350px;
+            left: 795px;
+            text-align: center;  
+        }
+    
+        .igual{
+            position: relative;
+            top: 150px;
+            padding: 20px 20px;
+            left: 230px;
+            width: 350px;
+            display: inline-block;
+          
+        }
+        .img4{
+            position: relative;
+            top: 150px;
+            padding: 20px 20px;
+            left: 230px;
+            width: 350px;
+            display: inline-block;
+        } 
+        .img5{
+            left:450px ;
+            width: 340px;
+        } 
+        .img10{
+            width: 200px;
+            position: relative;
+            left: 500px;
+        }      
+        .img6{
+            width: 420px;
+            top: 10px;
+            left: 190px ;
+            height: 320px;
+        }
+        .img7{
+            width:350px;
+            left: 380px;
+            top: 35px;
+        }
+        
+        .img8{
+            width: 450px;
+            top: -50px;
+            left: 170px;
+        }
+        .img9{
+            width: 340px;
+            top: -50px;
+            left: 350px;
+        }
+        .img11{
+            width: 350px;
+            top: -105px;
+            left: 210px;
+        }
+        .img12{
+            width: 400px;
+            top: -110px;
+            height: 250px;
+            left: 400px;
+        }
+        .titulo{
+            position: relative;
+            top: 175px;
+            font-size: 3.5em;
+            left:410px;
+            color: #333;
+            width: 485px;
+            border: 5px solid #C4C0FF;
+            background-color: #C4C0FF;
+            border-radius: 7px;
+            margin-top: 65px;
+            margin-bottom: 65px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .img13, .img14{
+            width: 35px;
+            margin-right: 20px;  
+            margin-top:-85px;
+            position: relative;
+            left: 45px;
+            bottom: 5px;
+        }
+        
+        
+        .redes{
+            display: inline-block;
+            font-size: 3.0em;
+            top: -4px;
+            color: black;
+            position: relative;
+            left: 35px;
+            padding: 0px;
+        }
+        .img15{
+            width: 250px;
+            position: relative;
+            top: -120px;
+            left: -5px;
+        }
+        .img16{
+            width: 100px;
+            position: relative;
+            top: -160px;
+            left: -90px;
+        }
+        .gracias{
+            display: inline-block;
+            font-size: 3.8em;
+            position: relative;
+            bottom: 220px;
+            color: #303F40;
+            padding: 0px;
+            left: -15px;
+        }
+         
+         
+        /*tablet*/
+        @media only screen and (max-width:1024px){
+          .nav a{
+            position: relative;
+            float: left;
+            width: 100;
+            top: -75px;
+            color: white;
+            text-align: center;
+            padding: 5px 20px;
+            text-decoration: none;
+            font-size: 2.5em;
+            font-weight: bold;
+            height: 60px;
+        }
+        h1{
+            width: 900px;
+            display: inline-block;
+            position: relative;
+            left: 45px;
+            top: 15px;
+            color: white;
+            font-size: 3.0em;
+            font-weight: bold;  
+            height: 90px;   
+        }
+        .imagen{
+            display: none;
+        }   
+        .img2{
+            width: 300px;
+            position: relative;
+            left: 655px;
+            bottom: 95px;
+        }
+        .img3{
+            width: 190px;
+            position: relative;
+            left: -235px;
+            top: 50px;
+        }
+          
+        .video{
+            width: 50%;
+            height: auto;
+            position: relative;
+            left: -250px;
+            top: 90px;
+            border-radius: 7px;
+        }
+        input[type=search]{
+            border: 3px solid #49627A;
+            position: relative;
+            width: 440px;
+            left: 290px;
+            border-radius: 7px ;
+            font-family: 'Amatic SC', cursive;
+            font-size: 2.0em;
+            text-align: center;
+            top: 20px;
+            background-image: url("img/lupa.png");
+            background-repeat: no-repeat;
+            background-position: 20px 7px;
+            background-size:25px 25px;
+            
+        }
+        input[type=search]:focus{
+            outline: brown;
+            border-color: brown;
+            border-radius: 7px; 
+        }
+        .img1{
+            width: 430px;
+            position: relative;
+            left: 300px;
+            top: 25px;
+        }
+        .titulo{
+            position: relative;
+            top: 95px;
+            font-size: 3.8em;
+            left:285px;
+            color: #333;
+            width: 455px;
+            border: 5px solid #C4C0FF;
+            background-color: #C4C0FF;
+            border-radius: 7px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .img4{
+            position: relative;
+            top: 40px;
+            padding: 20px 20px;
+            left: 145px;
+            width: 280px;
+            
+          
+        }
+        .img5{
+            position: relative;
+            top: 30px;
+            padding: 20px 20px;
+            left: 310px;
+            width: 280px;
+            
+        } 
+        .parrafo1{
+            background-color: #C0DBFF;
+            font-size: 2.0em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: 50px;
+            width: 350px;
+            left: 90px;
+            text-align: center;
+        }
+        .parrafo2{
+            background-color: #C0DBFF;
+            font-size: 2.0em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top:-115px;
+            width: 350px;
+            left: 550px;
+            text-align: center;
+            
+        }
+        .img6{
+            width: 370px;
+            top: -75px;
+            left: 100px ;
+            height: 260px;
+        }
+        .img7{
+            width:320px;
+            left: 180px;
+            top: -55px;
+        }
+        .parrafo3{
+            background-color: #C0DBFF;
+            font-size: 2.0em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -50px;
+            width: 350px;
+            left: 110px;
+            text-align: center; 
+        }
+        .parrafo4{
+            background-color: #C0DBFF;
+            font-size: 2.0em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -215px;
+            width: 350px;
+            left: 535px;
+            text-align: center;
+        }
+        .img8{
+            width: 400px;
+            top: -140px;
+            left: 50px;
+        }
+        .img9{
+            width: 320px;
+            top: -120px;
+            left: 150px;
+        }
+        .parrafo5{
+            background-color: #C0DBFF;
+            font-size: 2.0em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -130px;
+            width: 340px;
+            left: 78px;
+            text-align: center;
+            
+        }
+        .parrafo6{
+            background-color: #C0DBFF;
+            font-size: 2.0em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -295px;
+            width: 340px;
+            left: 538px;
+            text-align: center;
+            
+        }
+        .img11{
+            width: 370px;
+            top: -220px;
+            left: 70px;
+        }
+        .img12{
+            width: 380px;
+            top: -220px;
+            height: 280px;
+            left: 145px;
+        }
+        
+        .parrafo7{
+            background-color: #C0DBFF;
+            font-size: 2.0em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -225px;
+            width: 340px;
+            left: 85px;
+            text-align: center;  
+            
+        }
+        .parrafo8{
+            background-color: #C0DBFF;
+            font-size: 2.0em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -395px;
+            width: 340px;
+            left: 535px;
+            text-align: center;  
+        }
+        .img16{
+            width: 100px;
+            position: relative;
+            top: -20px;
+            left: -85px;
+        }
+        .gracias{
+            display: inline-block;
+            font-size: 3.5em;
+            position: relative;
+            bottom: 350px;
+            color: #303F40;
+            padding: 0px;
+            left: -205px;
+        }
+        .img15{
+            width: 250px;
+            position: relative;
+            top: -290px;
+            left: 655px;
+        }
+        .redes{
+            display: inline-block;
+            font-size: 3.5em;
+            top: 240px;
+            color: black;
+            position: relative;
+            left: 55px;
+            padding: 0px;
+        }
+        .img13, .img14{
+            width: 35px;
+            margin-right: 20px;  
+            margin-top:-85px;
+            position: relative;
+            left: 70px;
+            bottom: -240px;
+        }
+        
+        }
+        @media only screen and (max-width:768px){
+        .video{
+            width: 70%;
+            height: auto;
+            position: relative;
+            left: 230px;
+            top: -80px;
+            border-radius: 7px;
+        }
+        .img2{
+            width: 360px;
+            position: relative;
+            left: 635px;
+            bottom: -45px;
+        }
+        .img3{
+            width: 190px;
+            position: relative;
+            left: -335px;
+            top: 180px;
+        }
+        input[type=search]{
+            border: 3px solid #49627A;
+            position: relative;
+            width: 570px;
+            left: 190px;
+            border-radius: 7px ;
+            font-family: 'Amatic SC', cursive;
+            font-size: 2.5em;
+            text-align: center;
+            top: 50px;
+            background-image: url("img/lupa.png");
+            background-repeat: no-repeat;
+            background-position: 35px 10px;
+            background-size:30px 30px;
+            
+        }
+        input[type=search]:focus{
+            outline: brown;
+            border-color: brown;
+            border-radius: 7px; 
+        }
+        .img1{
+            width: 630px;
+            position: relative;
+            left: 160px;
+            top: 55px;
+        }
+        .nav a{
+            
+            position: relative;
+            display: inline;
+            top: -75px;
+            color: white;
+            text-align: center;
+            padding: 75px 30px;
+            text-decoration: none;
+            font-size: 2.8em;
+            font-weight: bold;
+            height: 60px;
+            float: right;
+        }
+        .nav{
+              padding-right: 0 -15px;
+              width: 1000px;
+          } 
+        h1{
+            width: 700px;
+            display: inline;
+            position: relative;
+            left: 45px;
+            top: -5px;
+            color: white;
+            font-size: 3.0em;
+            font-weight: bold;  
+            height: 180px; 
+            padding: 10px 10px;  
+        }
+        .gracias{
+            display: inline-block;
+            font-size: 3.5em;
+            position: relative;
+            bottom: 350px;
+            color: #303F40;
+            padding: 0px;
+            left: 185px;
+        }
+        .img16{
+            width: 100px;
+            position: relative;
+            top: 20px;
+            left: -85px;
+        }
+        .redes{
+            display: inline-block;
+            font-size: 3.5em;
+            top: 300px;
+            color: black;
+            position: relative;
+            left: 55px;
+            padding: 0px;
+        }
+        .img13, .img14{
+            width: 35px;
+            margin-right: 20px;  
+            margin-top:-85px;
+            position: relative;
+            left: 70px;
+            bottom: -300px;
+        }
+        }
+
+        @media only screen and (max-width:668px){
+         /*celulares*/
+         .video{
+            width: 700px;
+            height: auto;
+            position: relative;
+            left: 150px;
+            top: -80px;
+            border-radius: 7px;
+        }        
+        .img2{
+            display: none;
+        }
+        input[type=search]{
+            border: 3px solid #49627A;
+            position: relative;
+            width: 670px;
+            left: 170px;
+            border-radius: 7px ;
+            font-family: 'Amatic SC', cursive;
+            font-size: 3.5em;
+            text-align: center;
+            top: 20px;
+            background-image: url("img/lupa.png");
+            background-repeat: no-repeat;
+            background-position: 35px 10px;
+            background-size:30px 30px;
+            
+        }
+        input[type=search]:focus{
+            outline: brown;
+            border-color: brown;
+            border-radius: 7px; 
+        }
+        .titulo{
+            position: relative;
+            top: -65px;
+            font-size: 4.0em;
+            left:255px;
+            color: #333;
+            width: 495px;
+            border: 5px solid #C4C0FF;
+            background-color: #C4C0FF;
+            border-radius: 7px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .img1{
+            width: 630px;
+            position: relative;
+            left: 190px;
+            top: 25px;
+        }
+        .img4{
+            position: relative;
+            top: -85px;
+            padding: 20px 20px;
+            left: 320px;
+            width: 360px;
+        }
+        .img5{
+            position: relative;
+            top: 165px;
+            padding: 20px 20px;
+            left: 310px;
+            width: 380px;
+            
+        } 
+        .parrafo1{
+            background-color: #C0DBFF;
+            font-size: 2.5em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -580px;
+            width: 390px;
+            left: 300px;
+            text-align: center;
+        }
+        .parrafo2{
+            background-color: #C0DBFF;
+            font-size: 2.5em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -50px;
+            width: 390px;
+            left: 300px;
+            text-align: center;  
+        }
+           
+        .img6{
+            width: 470px;
+            top: 15px;
+            left: 280px ;
+            height: 320px;
+        }
+        .img7{
+            width:420px;
+            left: 330px;
+            top: 285px;
+        }
+        .parrafo3{
+            background-color: #C0DBFF;
+            font-size: 2.5em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -410px;
+            width: 390px;
+            left: 310px;
+            text-align: center; 
+        }
+        .parrafo4{
+            background-color: #C0DBFF;
+            font-size: 2.5em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: 65px;
+            width: 390px;
+            left: 325px;
+            text-align: center;
+        }
+        .img8{
+            width: 500px;
+            top: 110px;
+            left: 270px;
+        }
+        .img9{
+            width: 450px;
+            top: 350px;
+            left: 285px;
+        }
+        .parrafo5{
+            background-color: #C0DBFF;
+            font-size: 2.5em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: -360px;
+            width: 390px;
+            left: 318px;
+            text-align: center;
+            
+        }
+        .parrafo6{
+            background-color: #C0DBFF;
+            font-size: 2.5em;
+            font-family: 'Mali', cursive;
+            position: relative;
+            top: 140px;
+            width: 390px;
+            left: 312px;
+            text-align: center; 
+        }
+        .img11{
+            display: none;
+        }
+        .img12{
+            display: none;
+        }
+        
+        .parrafo7{
+            display: none;
+            
+        }
+        .parrafo8{
+            display: none;
+        }
+        .img15{
+            display: none;
+        }
+        .img16{
+            display: none;
+        }
+        .gracias{
+            display: none;
+        }
+        .redes{
+            display: inline-block;
+            font-size: 4.0em;
+            top: 180px;
+            color: black;
+            position: relative;
+            left: 55px;
+            padding: 0px;
+        }
+        .img13, .img14{
+            width: 45px;
+            margin-right: 20px;  
+            margin-top:-85px;
+            position: relative;
+            left: 70px;
+            bottom: -180px;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav "  >
+        <img class="imagen" src="img/logo.png" >
+        <h1>Área de niños</h1>
+        <a href="contacto.html" style="float:right;" >CONTACTO</a>
+        <a href="area_niñas.html" style="float:right;">ÁREA DE NIÑAS</a>
+        <a href="index.html" style="float:right;">INICIO</a>
+    </div>
+    <div>
+        <img class=" img1" src="img/plazacesamo.png" >
+        <input class="input" type="search" name="busca" id="busca" placeholder="BUSCAR PRODUCTOS..."><br>
+        <img class=" img2" src="img/Lougi.c.png" >
+        <img class=" img3" src="img/dinousario (1).png" >
+        
+        <video class=" video" src="video/video1.mp4" controls autoplay loop muted></video>  
+    </div>
+
+    <div>
+        <p class="titulo">PRODUCTOS DISPONIBLES</p>
+        <img class=" img4" src=https://laplayamegastore.com/images/stories/virtuemart/product/DSC03796.png >
+        <img class=" igual img5"  src="https://ae01.alicdn.com/kf/Ue326d5930af948dc9992182053069162S/Connex-juguete-educativo-de-baloncesto-conjunto-DIY-juguetes-educativos-modelo-de-construcci-n-ciencia-para-ni.png_350x350.png" > 
+    </div>
+    <div>
+        <p class="parrafo1">US$15 c/u.59<br>
+            <span>Con envíos a  Honduras</span>
+            Edades: 4 - 13 años </p>
+    </div>
+    <div>
+        <p class=" parrafo2" >US$30.59<br>
+            <span>Con envíos a Honduras</span>
+            Edades: 9 - 13 años.</p>
+    </div>
+    <div>
+        <img class=" igual img6 " src="https://laplayamegastore.com/images/stories/virtuemart/product/hw03.png">
+        <img class=" igual img7" src="https://laplayamegastore.com/images/stories/virtuemart/product/DSC03835.png">
+    </div>
+    <div>
+        <p class=" parrafo3">US$39.59 c/u.59<br>
+            <span>Con envíos a todo Honduras</span>
+            Edades: 7 - 13 años </p>
+    </div>
+    <div>
+        <p class=" parrafo4" >US$20.99<br>
+            <span>Con envíos a Honduras</span>
+            Edades: 4 - 10 años.</p>
+    </div>
+    <div>
+        <img class="igual img8" src="https://laplayamegastore.com/images/stories/virtuemart/product/DSC03893.png">
+        <img class=" igual img9" src="https://laplayamegastore.com/images/stories/virtuemart/product/mesa03.png" >
+    
+    </div>
+    <div>
+        <p class=" parrafo5">US$37.59 c/u.59<br>
+            <span>Con envíos a todo Honduras</span>
+            Edades: 4 - 12 años </p>
+    </div>
+    <div>
+        <p class=" parrafo6" >US$15.66<br>
+            <span>Con envíos a Honduras</span>
+            Edades: 8 - 14 años.</p>
+    </div>
+    <div>
+        <img class=" igual img11 " src="https://laplayamegastore.com/images/stories/virtuemart/product/DSC04058.png" >
+        <img class=" igual img12 " src="https://laplayamegastore.com/images/stories/virtuemart/product/DSC04103.png" >
+    </div>
+    <div>
+        <p class=" parrafo7">US$25.59 c/u.59<br>
+            <span>Con envíos a todo Honduras</span>
+            Edades: 6 - 13 años </p>
+    </div>
+    <div>
+        <p class=" parrafo8" >US$30.99<br>
+            <span>Con envíos a Honduras</span>
+            Edades: 8 - 13 años.</p>
+    </div> 
+    <div>
+        <p class="redes">SÍGUENOS:</p>
+        <a href="#"><img class="img13" src="img/facebook.png" ></a>
+        <a href="#"><img class="img14"src="img/instagram.png"></a>
+        <img class="img16" src="img/osito.png" >
+        <p class="gracias">¡¡¡Gracias por visitar nuestra pagina!!!</p>
+        <img class="img15" src="img/Bisounours.png" >
+    </div>
+</body>
+</html>
